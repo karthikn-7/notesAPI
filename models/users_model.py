@@ -3,6 +3,7 @@ from os import getenv
 from dotenv import load_dotenv
 from bson import ObjectId
 
+load_dotenv()
 class Users:
     """
     User db model, creates new user

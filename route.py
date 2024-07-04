@@ -14,11 +14,8 @@ from middleware.my_middlewares import tokenvalidator
 import bcrypt
 from middleware.token_decoder import decodeToken 
 
-# credentials
-username = getenv("USERNAME")
-password = getenv("PASSWORD")
 
-
+load_dotenv()
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = getenv("JWT_SECRET_KEY")
 CORS(app)

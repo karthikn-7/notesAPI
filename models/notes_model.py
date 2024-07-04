@@ -2,8 +2,7 @@ from pymongo import MongoClient
 from os import getenv
 from dotenv import load_dotenv
 from bson import ObjectId
-
-load_dotenv("../.env")
+load_dotenv()
 db_string = getenv("DB_CONNECTION_STRING")
 class Notes:
     # initialization
